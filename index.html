@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Printer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <section>
+            <h2 id="title" class="text-center">Multiplication Table Printer</h2>
+            <div class="col-md-12">
+                <label for="table-num"> Which Table Do you want to Print?</label><br>
+            <input type="number" id="table-num" /> 
+            </div>
+            <div class="col-md-12">
+                <label for="minlen"> Number to Start Table</label><br>
+            <input type="number" id="minlen" />
+            </div>
+            <div class="col-md-12">
+                <label for="maxlen">Number to End Table</label><br>
+                <input type="number" id="maxlen">
+            </div>
+            <div class="col-md-12 " id="generate">
+                <button type="button" onclick="myFunction()">Print Table</button>
+                <button type="button" onclick="reset()">Reset</button>
+            </div>
+            <div id="table"></div>
+        </section>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
